@@ -1,0 +1,28 @@
+cabal-version:      3.0
+name:               neuroindexer
+version:            0
+-- synopsis:
+-- description:
+license:            AGPL-3.0-only
+license-file:       LICENSE
+author:             Sergey Alirzaev
+maintainer:         l29ah@riseup.net
+-- copyright:
+category:           Graphics
+build-type:         Simple
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable neuroindexer
+    import:             warnings
+    main-is:            neuroindexer.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:      base ^>= 4.19.1.0,
+                        directory ^>= 1.3.8.5,
+                        filepath ^>= 1.4.300.1,
+                        hinotify ^>= 0.4.1,
+                        process ^>= 1.6.19.0,
+    default-language:   Haskell2010
